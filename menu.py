@@ -6,6 +6,7 @@ def menu():
         print("2. Subtrair")  
         print("3. Multiplicar")  
         print("4. Dividir")  
+        print("5. Sair")  
 
         opcao = int(input("\nEscolha uma opção: "))        
 
@@ -28,3 +29,6 @@ def menu():
             a = float(input("\nDigite o primeiro número: "))
             b = float(input("Digite o segundo número: "))
             print (f'\n{a} / {b} = {calculadora.dividir(a, b)}')
+
+        elif opcao == 0:
+            break
