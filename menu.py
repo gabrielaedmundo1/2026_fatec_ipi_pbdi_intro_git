@@ -1,34 +1,38 @@
 import calculadora
 
 def menu():
+    print("CALCULADORA 🧮")
+
     while True:
         print("1. Somar")        
         print("2. Subtrair")  
         print("3. Multiplicar")  
         print("4. Dividir")  
-        print("5. Sair")  
+        print("0. Sair")  
 
-        opcao = int(input("\nEscolha uma opção: "))        
+        opcao = int(input("\nEscolha uma opção: "))     
 
         if opcao == 1:
             a = float(input("\nDigite o primeiro número: "))
-            b = float(input("Digite o segundo número: "))
-            print (f'\n{a} + {b} = {calculadora.somar(a, b)}')
+            b = float(input("Digite o segundo número: ")) 
+            print (f'\n{a} + {b} = {calculadora.somar(a, b)}\n')
 
         if opcao == 2:
             a = float(input("\nDigite o primeiro número: "))
-            b = float(input("Digite o segundo número: "))
-            print (f'\n{a} - {b} = {calculadora.subtrair(a, b)}')
+            b = float(input("Digite o segundo número: ")) 
+            print (f'\n{a} - {b} = {calculadora.subtrair(a, b)}\n')
 
         if opcao == 3:
             a = float(input("\nDigite o primeiro número: "))
-            b = float(input("Digite o segundo número: "))
-            print (f'\n{a} * {b} = {calculadora.multiplicar(a, b)}')
+            b = float(input("Digite o segundo número: ")) 
+            print (f'\n{a} * {b} = {calculadora.multiplicar(a, b)}\n')
 
         if opcao == 4:
             a = float(input("\nDigite o primeiro número: "))
-            b = float(input("Digite o segundo número: "))
-            print (f'\n{a} / {b} = {calculadora.dividir(a, b)}')
+            b = float(input("Digite o segundo número: ")) 
+            print (f'\n{a} / {b} = {calculadora.dividir(a, b)}\n')
 
         elif opcao == 0:
             break
+
+menu()
