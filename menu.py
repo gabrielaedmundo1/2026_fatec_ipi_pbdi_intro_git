@@ -3,6 +3,7 @@ import calculadora
 def menu():
     while True:
         print("1. Somar")        
+        print("2. Subtrair")        
 
         opcao = int(input("Escolha uma opção: "))        
 
@@ -10,3 +11,8 @@ def menu():
             a = float(input("Digite o primeiro número: "))
             b = float(input("Digite o segundo número: "))
             print (f'{a} + {b} = {calculadora.somar(a, b)}')
+
+        if opcao == 2:
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+            print (f'{a} - {b} = {calculadora.subtrair(a, b)}')
