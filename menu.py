@@ -1,7 +1,7 @@
 import calculadora
 
 def menu():
-    print("CALCULADORA 🧮")
+    print("# Calculadora #")
 
     while True:
         print("1. Somar")        
